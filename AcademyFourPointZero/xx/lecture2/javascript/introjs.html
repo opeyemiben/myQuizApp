@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro to JS</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <h2>JavaScript simple use case</h2>
+    <p> using JavaScript getElementById to change the color of a box</p>
+    <div id="myDiv" style="margin: 40px; width: 50%; border: 10px solid;">
+        <!-- <p id="myDiv"></p> -->
+    </div>
+    <button onclick="changeToRed()">switch to red</button>
+    <button onclick="changeToBlue()">switch to blue</button><br>
+    <script>
+        function myFunction(){
+            console.log("I'm inside a function")
+        }
+
+        function changeToRed(){
+            document.getElementById('myDiv').innerHTML = "I'm red";
+            document.getElementById('myDiv').style.color = 'red';
+        }
+
+        function changeToBlue(){
+            document.getElementById('myDiv').innerHTML = "I'm blue";
+            document.getElementById('myDiv').style.color = "blue"
+        }
+
+        document.write("Using document.write to display messages on our web pages");
+
+        window.alert("Intro to JavaScript");
+
+        console.log("I'm now a red div logged into the browser console");
+
+    </script>
+</body>
+</html>

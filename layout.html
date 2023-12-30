@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Layout</title>
+    <style>
+        * {
+            background-image: url("https://img.freepik.com/free-photo/flat-lay-white-guitar-arrangement_23-2148785745.jpg?w=360&t=st=1694783516~exp=1694784116~hmac=c18297c40f3d8dc5508874a07993e90badef4473b570e3caf6c628065b6cacc5");
+            font-family: cursive;
+            box-sizing: border-box;
+            margin: 0;
+        }
+        .header {
+            background-color:rgb(0, 139, 30);
+            padding: 20px;
+            text-align: center;
+            font-size: 22px;
+        }
+
+        .nav {
+            background-color:rgb(14, 220, 27);
+            overflow: hidden;
+            text-align: center;
+            word-spacing: 3em;
+        }
+
+        .nav a {
+            text-decoration: none;
+            display: inline-block;          
+        }
+
+        .mainDiv {
+          float: left;  
+          padding: 12px;
+          background-color: rgb(53, 218, 20);
+        }
+
+        .column {
+          float: left;  
+          padding: 12px;
+        }
+        .column.side {
+            width: 25%;
+            padding: 1px;
+        }
+
+        .column.middle {
+            width: 50%;
+        }
+
+        .footer {
+            background-color: rgb(14, 177, 58);
+            padding: 20px;
+            text-align: center;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h2>My Music page</h2>
+    </div>
+    <div class="nav">
+        <a href="timetable.html">Home</a>
+        <a href="class.html">Products</a>
+        <a href="index.html">Contact</a>
+        <a href="submitform.html">Customers</a>
+    </div>
+    <div class="mainDiv">
+        <div class="column side">
+            <h2>Music</h2>
+            <img src="1541406459622.jpg" alt="Image" height="300px" width="300px">
+            <p style="color: black;">Robert Schumann: "To send light into the darkness of mens heart-such is the duty of the artist" <br> Bob Marley: "One good thing about music, when it hits you, you feel no pain"</p>
+        </div>
+        <div class="column middle">
+            <h2>Is</h2>
+            <img src="1541426191502.jpg" alt="Image" height="400px" width="600px">
+            <p>Pablo Casals: "Music is the divine way to tell beautiful poetic things to the heart" <br> Billy Joel: "Musicians want to be the loud voice for so many quiet hearts " </p>
+        </div>
+        <div class="column side">
+            <h2>Life</h2>
+            <img src="1541406460238.jpg" alt="Image" height="300px" width="300px">
+            <p>Igor Stravinsky: "Too many pieces of music finish too long after the end" <br>  Plato: "Music gives a soul to the universe, wings to the mind, flight to the imagination, and life to everything"</p>
+        </div>
+    </div>
+    <div class="footer">
+        <h1>Soothing relief to the soul</h1>
+    </div>
+</body>
+</html>

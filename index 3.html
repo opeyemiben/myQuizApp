@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window Image</title>
+    <style>
+        
+        /* Set the background color of the entire page to white */
+        body {
+            background-color: white;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; /* Ensure the entire viewport height is used */
+        }
+        .window {
+            display: flex;
+            /*border: 2px solid brown;*/
+            width: 500px;
+            font-size: 35px;
+        }
+        /* Style for the left column (big box) */
+        .left-column {
+            background-image: url(https://img.freepik.com/free-photo/flat-lay-work-space-with-coffee-cup-keyboard_23-2148397861.jpg);
+            background-color: #ccc;
+            padding: 20px;
+            flex: 1;
+            
+        }
+        /* Style for the right column (container for small boxes) */
+        .right-column {
+            display: flex;
+            width: ;
+            
+        flex-direction: column; /* Align small boxes vertically */
+    flex: 1;
+    padding: 18px; /* Increased padding */
+    border: 1px solid brown; /* Add a border to the right column */
+}
+        .small-box {
+            background-color: #ff9900;
+            flex: 22px; /* Fill available space within the column */
+            border: 2px solid #333;
+            display: flex;
+            justify-content: center;
+            padding: 15px; /* Increased padding */
+            width: 85%;      
+        }
+        
+    </style>
+</head>
+<body>   
+    <div class="window">
+        <div class="left-column">
+            <h1 style="color: rgb(234, 255, 0); font-family: Georgia, 'Times New Roman', Times, serif; font-size: larger; margin-top: ; padding: 125px;"> IKEA</h1>
+        </div>
+        <div class="right-column">
+            <div class="small-box">IKEA Today</div>
+            <br>
+            <div class="small-box">About IKEA</div>
+            <br>
+            <div class="small-box">IKEA Museum</div>
+            <br>
+            <div class="small-box">IKEA</div>
+        </div>
+    </div>
+    <button><a href="layout.html">GO BACK</a></button>
+</body>
+</html>

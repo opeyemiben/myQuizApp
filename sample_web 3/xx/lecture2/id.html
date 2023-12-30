@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>id</title>
+</head>
+<style>
+    #angularId{
+        background-color: blue;
+        color: white;
+    }
+    #djangoId{
+        background-color: green;
+        color: gold;
+    }
+</style>
+<body>
+    <script>
+        function getMessage(){
+            document.getElementById("bottom").innerHTML = "JavaScript is the best programming language";
+            document.getElementById("asp").style.color = "red";
+        }
+    </script>
+    <p id="top"></p>
+    <h3><a href="#bottom">Navigate to bottom</a></h3>
+    <h3><a href="#ruby">Navigate to ruby</a></h3>
+       <div id="angularId">
+        <h2>Angular</h2>
+        <p>Angular is a framework of Javascript</p>    
+    </div>
+    <br>
+    <div id="asp">
+        <h2>ASP .Net</h2>
+        <p>ASP .Net is a framework of C#</p>    
+    </div>
+    <br>
+    <div id="djangoId">
+        <h2>Django</h2>
+        <p>Django is a framework of Python</p>    
+    </div>
+    <div>
+        <h2>React</h2>
+        <p>React is a framework of Javascript</p>    
+    </div>
+    <br>
+    <div>
+        <h2>Vue</h2>
+        <p>Vue is a framework of Javascript</p>    
+    </div>
+    <br>
+    <div>
+        <h2>Laravel</h2>
+        <p>Laravel is a framework of PHP</p>    
+    </div>
+    <div id="ruby">
+        <h2>Ruby on Rails</h2>
+        <p>Ruby is a framework of Rails</p>    
+    </div>
+    <br>
+    <div>
+        <h2>Spring boot</h2>
+        <p>Spring is a framework of Java</p>    
+    </div>
+    <br>
+    <div>
+        <h2>Kotlin</h2>
+        <p>Kotlin is a framework of Java</p>    
+    </div>
+    <p id="bottom"></p>
+    <button type="button" style="background-color: blue; color: white; cursor: pointer;" onclick="getMessage()">Click for a message</button>
+    <h3><a href="#top">Navigate to top</a></h3><br>
+</body>
+</html>

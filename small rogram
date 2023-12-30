@@ -1,0 +1,39 @@
+from selenium import webdriver
+from time import sleep
+import time
+import pandas as pd
+import sqlite3
+import xlsxwriter
+import requests
+import openpyxl
+import random
+from bs4 import BeautifulSoup
+from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from openpyxl import load_workbook
+from openpyxl.utils.dataframe import dataframe_to_rows
+import webbrowser
+# Specify the login credentials and the site URL
+your_username = "349229877"
+your_password = "Hyphea25"
+your_username1 = "444187793"
+your_password1 = "Hyphea25"
+url = "https://1xbet.ng/en"
+
+webbrowser = "firefox_path"
+# Start a new browser window
+firefox_path = r'C:\Program Files (x86)\Mozilla Firefox 3.6 Beta 3\firefox.exe'
+webbrowser.register('firefox', None, webbrowser.BackgroundBrowser(firefox_path))
+webbrowser.get('firefox').open_new_tab(url)
+time.sleep(2)
+button = driver.find_element("xpath","//a[.//span[text()[contains(., 'over')]]]")
+
+
+links = driver.find_elements("xpath", "//a[@href]")
+for link in links:
+    if "login" in link.get_attribute("innerHTML"):
+        link.click()
+        break
+driver.switch_to.window(driver.current_window_handle[1])

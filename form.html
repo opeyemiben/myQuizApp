@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+    <form>
+        <h2>My Form</h2>
+        <fieldset>
+            <legend>Basic details</legend>
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" placeholder="first name" maxlength="10">
+            <p></p>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" placeholder="last name">
+            <p></p>
+            <label for="pass">Password:</label>
+            <input type="password" id="pass" name="pass">
+            <p></p>
+            <label>Age:</label>
+            <input type="number" id="age" name="age" max="70" min="18">
+        </fieldset><br>
+        <fieldset>
+            <legend>choose your browser</legend>
+            <!-- <p>choose your browser</p> -->
+            <input type="radio" id="opera" name="browser" value="Opera" checked>
+            <label for="opera">Opera Mini</label><br>
+            <input type="radio" id="chrome" name="browser" value="Chrome">
+            <label for="chrome">Chrome</label>    
+        </fieldset><br>
+        <fieldset>
+            <legend>Means of Identification</legend>
+            <!-- <p>Means of Identification</p> -->
+            <input type="checkbox" id="license" name="license" value="License" checked>
+            <label for="license">License</label><br>
+            <input type="checkbox" id="nin" name="nin" value="NIN">
+            <label for="nin">NIN</label>    
+        </fieldset>
+        <br>
+        <label for="car"> Select your car: </label>
+        <select id="car"name="car" size="1">
+            <option value="Volvo">Volvo</option>
+            <option value="Mercedez" selected>Mercedez</option>
+            <option value="Ford">Ford</option>
+            <option value="Audi">Audi</option>
+        </select>
+        <p>Enter a comment</p>
+        <label for="message">Message</label>
+        <textarea id="message" rows="10" cols="30"></textarea>
+        <p>Upload a file</p>
+        <input type="file" id="myfile" name="myfile" accept=".jpg,.png,.xlsx">
+        <!-- <p></p>
+        <button onclick="alert('This lecture is on HTML forms!')">Click Me</button> -->
+        <p></p>
+        <input type="submit" value="Submit Form">
+    </form>
+</body>
+</html>

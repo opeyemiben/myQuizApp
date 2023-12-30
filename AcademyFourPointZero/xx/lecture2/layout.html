@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Layout</title>
+    <style>
+        * {
+            font-family: cursive;
+            box-sizing: border-box;
+            margin: 0;
+        }
+        .header {
+            background-color:darkcyan;
+            padding: 20px;
+            text-align: center;
+            font-size: 22px;
+        }
+
+        .nav {
+            background-color:burlywood;
+            overflow: hidden;
+        }
+
+        .nav a {
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .mainDiv {
+          float: left;  
+          padding: 12px;
+          background-color: gray;
+        }
+
+        .column {
+          float: left;  
+          padding: 12px;
+        }
+        .column.side {
+            width: 25%;
+        }
+
+        .column.middle {
+            width: 50%;
+        }
+
+        .footer {
+            background-color: darkcyan;
+            padding: 20px;
+            text-align: center;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Page Header</h1>
+    </div>
+    <div class="nav">
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">Contact</a>
+        <a href="#">Customers</a>
+    </div>
+    <div class="mainDiv">
+        <div class="column side">
+            <h2>Side Content</h2>
+            <p>This is the side content of our web page</p>
+        </div>
+        <div class="column middle">
+            <h2>Middle Content</h2>
+            <p>This is the middle content of our web page. This is the middle content of our web page. This is the middle content of our web page. This is the middle content of our web page. This is the middle content of our web page. This is the middle content of our web page. This is the middle content of our web page. This is the middle content of our web page. This is the middle content of our web page. This is the middle content of our web page. This is the middle content of our web page. This is the middle content of our web page. This is the middle content of our web page.</p>
+        </div>
+        <div class="column side">
+            <h2>Side Content</h2>
+            <p>This is the side content of our web page</p>
+        </div>
+    </div>
+    <div class="footer">
+        <h1>Page Footer</h1>
+    </div>
+</body>
+</html>

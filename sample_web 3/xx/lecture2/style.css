@@ -1,0 +1,39 @@
+/* element selector */
+h5 {
+    color: blue; 
+    font-size: 10px;
+}
+
+/* class selector */
+.myClass {
+    background-color: aqua;
+    text-align: center;
+}
+
+/* id selector */
+#myId {
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+/* grouping selector */
+
+h5, h4, p, select {
+    color: blue; 
+    font-size: 10px;
+}
+
+p.uniqueClass {
+    color: gray;
+    font-family: cursive;
+}
+
+/* universal selector */
+/* * {
+    padding: 50px;
+    margin: 30px;
+} */
+
+.newClass {
+    color: blue;
+}

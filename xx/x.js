@@ -1,0 +1,17 @@
+let name = 'Opeyemi';
+console.log(name);
+
+let isOdd = function (num) {
+    if(num < 2) {
+        return false;
+    }
+    for(let i = 2; i < num; i++) {
+        if(num % i === 0) {
+            return false;
+        }
+    }
+    return true
+}
+
+console.log(isOdd(7));
+console.log(isOdd(9));

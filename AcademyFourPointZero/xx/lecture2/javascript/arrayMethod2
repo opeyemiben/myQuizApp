@@ -1,0 +1,52 @@
+//sort()
+/*let digits = [3,5,7,9,5,0,1,4];
+let temp = [3,5,7,9,5,0,1,4,10];
+let sorted = temp.sort(); //ascending order
+console.log(digits);
+console.log(temp);
+console.log(sorted);*/
+
+//reverse()
+
+const reverse =  [5,7,8,9,0,3,5,6];
+const rev = [5,7,8,9,0,3,5,6];
+let reversed = rev.reverse(); //descending order
+
+//console.log(reverse);
+//console.log(rev);
+//console.log(reversed);
+
+const str = ['apple', 'mango', 'melon', 'avocado', 'Apple', 'Melon'];
+
+//console.log(str.sort());
+
+//sort comparison function
+let temp = [3,5,7,9,5,0,1,4,10];
+let sorted = temp.sort();
+console.log(sorted);
+
+let x = [3,5,7,9,5,0,1,4,10];
+console.log(x.sort((a,b) => (a - b)));
+
+const str2 = ['apple', 'mango', 'melon', 'avocado', 'Apple', 'Melon'];
+console.log(str.sort());
+console.log(str2.sort((a,b) => (a - b)));
+
+let y = [3,5,7,9,5,0,1,4,10];
+console.log(x.sort((a,b) => (b - a)));
+
+//filter()
+let val = [3,5,6,7,3,4,5,6,2];
+let valGreaterThan3 = val.filter(x => (x > 3));
+console.log(val);
+console.log(valGreaterThan3);
+
+//includes()
+
+console.log(val.includes(5));
+
+//some()
+console.log(val.some(x => x > 9));
+
+//every()
+console.log(val.every(x => x < 2));

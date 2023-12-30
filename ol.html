@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Repeated Letters Count</title>
+</head>
+<body>
+    <h1>Repeated Letters Count</h1>
+    <label for="text">Enter text:</label>
+    <textarea id="text" rows="4" cols="50"></textarea>
+    <button onclick="countRepeatedLetters()">Count Repeated Letters</button>
+    <div id="result"></div>
+
+    <script>
+        function countRepeatedLetters() {
+            const t = document.getElementById("text").value, l = {}, r = Object.keys(l);
+            t.replace(/[a-zA-Z]/g, c => l[c.toLowerCase()] = -~l[c.toLowerCase()]);
+            result.innerHTML = r.length > 0 ? `<h2>Repeated Letters:</h2>${r.map(c => `<p>${c}: ${l[c]}</p>`).join("")}` : "<p>No repeated letters found.</p>";
+        }
+    </script>
+</body>
+</html>
